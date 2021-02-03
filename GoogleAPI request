@@ -1,0 +1,51 @@
+{
+  "kind": "drive#about",
+  "user": {
+    "kind": "drive#user",
+    "displayName": string,
+    "photoLink": string,
+    "me": boolean,
+    "permissionId": string,
+    "emailAddress": string
+  },
+  "storageQuota": {
+    "limit": long,
+    "usage": long,
+    "usageInDrive": long,
+    "usageInDriveTrash": long
+  },
+  "importFormats": {
+    (key): [
+      string
+    ]
+  },
+  "exportFormats": {
+    (key): [
+      string
+    ]
+  },
+  "maxImportSizes": {
+    (key): long
+  },
+  "maxUploadSize": long,
+  "appInstalled": boolean,
+  "folderColorPalette": [
+    string
+  ],
+  "teamDriveThemes": [
+    {
+      "id": string,
+      "backgroundImageLink": string,
+      "colorRgb": string
+    }
+  ],
+  "driveThemes": [
+    {
+      "id": string,
+      "backgroundImageLink": string,
+      "colorRgb": string
+    }
+  ],
+  "canCreateTeamDrives": boolean,
+  "canCreateDrives": boolean
+}

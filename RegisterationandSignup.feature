@@ -36,3 +36,10 @@ And user enters "password" with "Test@123"
 And user clicks "login" button
 Then error message displayed with wrong password
 And user returns back on login page
+
+Scenario Outline: Login functionality
+Username | Password
+username1 | password1
+username2 | password2
+username3 | password3
+username4 | password4

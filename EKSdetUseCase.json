@@ -1,0 +1,1 @@
+[{"appName":"appFour","appData":{"isValid":false,"appOwner":"ownerOne1","appPath":"\/appSix"}},{"appName":"appFive","appData":{"isValid":false,"appOwner":"ownerOne1","appPath":"\/appSix"}},{"appName":"appSix","appData":{"isValid":true,"appOwner":"ownerOne1","appPath":"\/appSix"}},{"appName":"appThree","appData":{"isValid":false,"appOwner":"ownerThree3","appPath":"\/appSix"}}]

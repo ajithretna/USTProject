@@ -1,0 +1,99 @@
+{
+	"info": {
+		"_postman_id": "77ce305e-0de9-40f0-9e6f-a1f5dc59d736",
+		"name": "Ek Solutions Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET APPS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/internal/apps",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"internal",
+						"apps"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE APPS",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n\t{\r\n\t\t\"appName\": \"appOne\",\r\n\t\t\"appData\": {\r\n\t\t\t\"appPath\": \"/appSix\",\r\n\t\t\t\"appOwner\": \"ownerOne1\",\r\n\t\t\t\"isValid\": false\r\n\t\t}\t\t\r\n\t},\r\n\t{\r\n\t\t\"appName\": \"appTwo\",\r\n\t\t\"appData\": {\r\n\t\t\t\"appPath\": \"/appSix\",\r\n\t\t\t\"appOwner\": \"ownerTwo2\",\r\n\t\t\t\"isValid\": true\r\n\t\t}\t\t\r\n\t},\r\n\t{\r\n\t\t\"appName\": \"appThree\",\r\n\t\t\"appData\": {\r\n\t\t\t\"appPath\": \"/appSix\",\r\n\t\t\t\"appOwner\": \"ownerThree3\",\r\n\t\t\t\"isValid\": false\r\n\t\t}\t\t\r\n\t},\r\n\t{\r\n\t\t\"appName\": \"appFour\",\r\n\t\t\"appData\": {\r\n\t\t\t\"appPath\": \"/appSix\",\r\n\t\t\t\"appOwner\": \"ownerOne1\",\r\n\t\t\t\"isValid\": false\r\n\t\t}\t\t\r\n\t},\r\n\t{\r\n\t\t\"appName\": \"appFive\",\r\n\t\t\"appData\": {\r\n\t\t\t\"appPath\": \"/appSix\",\r\n\t\t\t\"appOwner\": \"ownerOne1\",\r\n\t\t\t\"isValid\": false\r\n\t\t}\t\t\r\n\t},\r\n\t{\r\n\t\t\"appName\": \"appSix\",\r\n\t\t\"appData\": {\r\n\t\t\t\"appPath\": \"/appSix\",\r\n\t\t\t\"appOwner\": \"ownerOne1\",\r\n\t\t\t\"isValid\": true\r\n\t\t}\t\t\r\n\t}\r\n]"
+				},
+				"url": {
+					"raw": "http://localhost:8082/internal/apps",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"internal",
+						"apps"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE APPS",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n\t{\r\n\t\t\"appName\": \"appOne\",\r\n\t\t\"appData\": {\r\n\t\t\t\"appPath\": \"/appSix\",\r\n\t\t\t\"appOwner\": \"ownerOne1\",\r\n\t\t\t\"isValid\": false\r\n\t\t}\t\t\r\n\t},\r\n\t{\r\n\t\t\"appName\": \"appTwo\",\r\n\t\t\"appData\": {\r\n\t\t\t\"appPath\": \"/appSix\",\r\n\t\t\t\"appOwner\": \"ownerTwo2\",\r\n\t\t\t\"isValid\": true\r\n\t\t}\t\t\r\n\t}\r\n]"
+				},
+				"url": {
+					"raw": "http://localhost:8082/internal/apps",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"internal",
+						"apps"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
